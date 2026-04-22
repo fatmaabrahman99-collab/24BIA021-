@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Ordering Form</title>
+        
+        <style>
+            
+            body{
+                font-family:Arial;
+                background-color:lightgrey;
+            }
+
+            table{
+                width: 80%;
+                margin: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="form_handler.php" method="post" autocomplete="off">
+    <fieldset>
+        <legend align="center">PIZZA ORDER FORM</legend>
+        <fieldset>
+            <legend>Delivery Address</legend>
+            <table>
+                <tr>
+                    <td>Full Name:</td>
+                    <td><input type="text" name="Full Name" placeholder="Enter full name" required></td>
+
+                    <td>Street Address:</td>
+                    <td><input type="text" name="Street Address" placeholder="Enter the street Address" required></td>
+                </tr>
+
+                <tr>
+                    <td>Phone:</td>
+                    <td><input type="text" name="Phone" placeholder="Enter phone number" required></td>
+
+                    <td>Email:</td>
+                    <td><input type="text" name="Email" placeholder="Enter email address" required></td>
+                </tr>
+
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="text" name="Password" placeholder="Enter Password" required></td>      
+                </tr>
+            </table>
+        </fieldset>    
+            <br>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+            <table>
+                <tr>
+                    <td>Card Type:</td>
+                    <td>
+                        <select>
+                            <option>Mastercard</option>
+                            <option selected>Visa</option>
+                            <option>Discover</option>
+                        </select>
+                    </td>
+
+                    <td>Card Number:</td>
+                    <td><input type="text" name="Card Number" placeholder="Enter card number" required></td>
+                </tr>
+
+                <tr>
+                    <td>Name on Card:</td>
+                    <td><input type="text" name="Name on Card" placeholder="Enter name" required></td>      
+                </tr>
+            </table>
+        </fieldset>    
+            <br>
+
+        <fieldset> 
+            <legend>Customize Your Pizza</legend>
+            <table>
+                <tr>
+                    <td>Pizza size:</td>
+                    <td>
+                        <select>
+                            <option selected>large</option>
+                            <option>small</option>
+                            <option>medium</option>
+                        </select>
+                    </td>
+                    <td>Quantity:</td>
+                    <td><input type="number" name="Quantity" required> </td>
+                </tr>
+
+                <tr>
+                    <td>Spices:</td>
+                    <td><input type="checkbox">Black peppers</td>
+                    <td><input type="checkbox">Bell peppers</td>
+                    <td><input type="checkbox">Mayonnaise</td>
+                </tr>
+
+                <tr>
+                    <td>Other Requirement</td>
+                    <td>
+                        <textarea name="Other Requirement" placeholder="Any other requirements"></textarea>
+                    </td>
+
+                    <td>Meat</td>
+                    <td>
+                        <input type="radio" name="meat">Fish
+                        <input type="radio" name="meat">Cow
+                        <input type="radio" name="meat">Chicken
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        
+        <table>
+            <tr>
+                <td>
+                    <input type="reset" value="Clear Order">
+                    <input type="submit" value="Place Order">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+        </form>
+    </body>
+</html>
