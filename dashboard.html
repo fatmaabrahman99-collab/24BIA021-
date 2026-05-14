@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student Management System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: graylight;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .admin-profile {
+            display: flex;
+            align-items: center;
+        } 
+        .admin-profile img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-left: 10px; 
+        }      
+
+        .main-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+        #sidebar {
+            width: 270px;
+            background-color: darkblue; 
+            color: white;
+            
+            
+        }
+        .sidebar-header {
+            background-color: lightblue; 
+            padding:  0 20px;
+            text-align: left;
+        }
+        #sidebar ul {
+            list-style: none;
+            padding: 10px;
+            
+        }
+        #sidebar ul li a {
+            padding: 12px;
+            display: block;
+            color: white;
+            text-decoration: none;
+            gap: 10px;
+            font-size: 14px;
+            display: flex;
+            text-align: center;
+        }
+        #sidebar ul li:hover{
+            background:blue;
+        }
+        #content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .top-navbar {
+            background-color: white;
+            height: 60px;
+            padding: 10pxpx;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom:15px;
+            border-bottom: 3px solid orange;
+        }
+        
+        .img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+    
+        .dashboard-body {
+            padding: 10px;
+        }
+        .card-container {
+            display: flex;
+            gap: 10px;
+        }
+        .stat-card {
+            background-color: whitesmoke;
+            width: 100px;
+            padding: 10px;
+            border: none;
+            
+        }
+        .stat-card p {
+            color: gray;
+            margin: 0;
+            font-size: 12px;
+        }
+        .stat-card h2 {
+            color: blue;
+            margin: 5px 0 0 0;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px;
+            color: gray;
+            font-size: 12px;
+            border-top: 1px solid silver;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-wrapper">
+    
+    <nav id="sidebar">
+        <div class="sidebar-header">
+        
+            <img src="images/suza.png" alt="suza" width="60">
+        </div>
+     <div class="admin-profile">
+        <ul>
+            <li><a href="dashboard.html"><img src="images/dashboard.png" width="50px">Dashboard</a></li>
+            <li><a href="manage-users.html"><img src="images/Users.png" width="50px">Manage Users</a></li>
+            <li><a href="manage-instructors.html"><img src="images/Instructors.PNG" width="50px">Manage Instructors</a></li>
+            <li><a href="manage-students.html"><img src="images/Students.png" width="50px">Manage Students</a></li>
+            <li><a href="manage-courses.html"><img src="images/Courses.png" width="50px">Manage Courses</a></li>
+            <li><a href="manage-results.html"><img src="images/Result.png" width="50px">Manage Results</a></li>
+            <li><a href="manage-allocation.html"><img src="images/Allocations.png" width="50px">Manage Allocations</a></li>
+        </ul>
+      </div>  
+    </nav>
+
+    
+    <div id="content">
+        <div class="top-navbar">
+            <button style="background: blue; border: 1px solid blue; padding: 5px 10px; cursor: pointer;">☰</button>
+            <div class="admin-profile">
+                <b style="font-weight: bold; font-size: 14px;">Admin Name</b>
+                <img src="images/Profile.png">
+            </div>
+        </div>
+
+        <div class="dashboard-body">
+            <h2 style="margin-bottom: 30px; font-weight: bold;">Admin Dashboard</h2>
+            
+            <div class="card-container">
+                <div class="stat-card">
+                    <p>Total Courses</p>
+                    <h2>0</h2>
+                </div>
+                
+                <div class="stat-card">
+                    <p>Total Students</p>
+                    <h2>0</h2>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            @ 2025 The State University of Zanzibar | Version 1.0.2
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>
